@@ -1,5 +1,5 @@
 """
-  # Python
+  # Python is
     1. A high-level
     2. Interpreted
     3. General-purpose programming language known for its clear syntax and 
@@ -134,5 +134,4 @@
       - Languages: SQL, R (for statistics)
       - Why: These languages are designed to solve specific domain problems, 
         offering tailored syntax and functionality.
-
 """

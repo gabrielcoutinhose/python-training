@@ -10,12 +10,16 @@ An overview of variables and data types
 # We have two options: the variable, which is mutable, and the constant,
 # which is immutable during the execution of the program (if it is in
 # memory and not in a database).
+# Using the variable 'constant' in uppercase is a convention for non-mutable variables;
+# although Python does not use the concept of constants.
 
 # Variable
-print(current_vehicle_speed=20)
+current_vehicle_speed = 20  # pylint: disable=C0103
+print(current_vehicle_speed)
 
 # Constant
-const = print(start_vehicle_speed=0)
+START_VEHICLE_SPEED = 10
+print(START_VEHICLE_SPEED)
 
 # Unpacking process
 vehicle_one_power, vehicle_two_power = 1.0, 2.5
@@ -41,7 +45,7 @@ print(text="Hello, world!", text_two="hello world")  # Output: Hello, world!
 
 # Lists (list): Ordered and mutable collections of items, which can be of
 # different types, such as [1, 2, 3] or ["a", "b", "c"].
-list_example = [1, 2, 3, "four"]
+list_example = [1, 2, 3, "four", True]
 print(list_example)  # Output: [1, 2, 3, 'four']
 
 # Tuples (tuple): Ordered and immutable collections of items, such as (1, 2, 3).
@@ -63,33 +67,40 @@ print(false_value=False)  # Output: False
 # Objects: In Python, you can create your own classes and objects,
 # allowing for the manipulation of complex data.
 class Person:
-    """
-    ...
-    """
+    """class that represents a person object"""
 
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
+    def greet(self):
+        """method that makes the person introduce themselves"""
+        return f"Hello, my name is {self.name} and i have {self.age} old."
 
+
+# Creating an instance of the Person class
 person = Person("Maria", 25)
+
+# Accessing attributes
 print(person.name)  # Output: Maria
+print(person.age)  # Output: 25
+
+# Calling a method
+print(person.greet())  # Output: Hello, my name is Maria and I am 25 years old.
 
 
 # Arrays: While lists are commonly used, the NumPy library offers arrays
 # that are more efficient for mathematical and scientific operations.
 class Person2:
-    """
-    ...
-    """
+    """required string"""
 
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
 
-person = Person2("Maria", 25)
-print(person.name)  # Output: Maria
+person = Person2("John", 20)
+print(person.name, person.age)  # Output: John and 20
 
 # DataFrames: The Pandas library allows you to work with data tables,
 # which are very useful for data analysis.
