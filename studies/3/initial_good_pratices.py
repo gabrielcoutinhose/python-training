@@ -1,8 +1,19 @@
 """
 # 1. Consistency & Indentation:
+  - Constant
+    - Using the uppercase naming convention for non-mutable variables (constants);
+    - although Python has no concept of constants.
+    VEHICLE_INITIAL_SPEED = 10
+    print("Vehicle's initial speed:", VEHICLE_INITIAL_SPEED)
+  - Variable
+    - For variables, only snake_case.
+    - If you want to avoid the pytlint recommendation, use:
+    - pylint: disable=C0103 in front of the variable
+    vehicle_current_speed = 20 # pylint: disable=C0103
+    print("Vehicle's current speed:", vehicle_current_speed)
   - The most important thing is to be consistent throughout your project. For 
-  example: If you decide to use tabs with 2 spaces, make sure that all developers 
-  on the project follow this convention.
+    example: If you decide to use tabs with 4 spaces(as recommended), make sure that all developers 
+    on the project follow this convention.
   - In Python, you can use quotes in the following ways: ' ', " ", or """ """.
   - Basically, you can use in addition to these ways: ' " " ' and " ' ' ".
   - For formatting strings, it is recommended to use: " ".
@@ -28,7 +39,6 @@
   - Use reduced forms of conditionals.
   - Comment carefully, and consider whether to use block comments or objective 
     comments.
-
 # 2. Naming & Comments:
   - Option one - Use `snake_case` for variable and function names. Example: 
     `my_variable`, `calculate_average()`.
@@ -50,7 +60,6 @@
     than they help.
   - To explain parts of the code that may not be immediately clear, use `#` 
     for single-line comments and """ """ or ''' ''' for docstrings.
-
 # 3. Code Structure & Avoid Duplicate Code:
   - Maintain a clear and organized structure.
   - Organize your imports at the beginning of the file. Follow the order: 
@@ -86,7 +95,6 @@
     need to perform that calculation, instead of repeating the same code over 
     and over again. This not only reduces the amount of code, but also makes 
     your program more organized and easier to understand.
-
 # 4. Avoid over-engineering
   - Simplicity is the ultimate state of sophistication. Of course, don’t 
     simplify to the point of incomprehensibility or vice versa. The goal is to 
@@ -104,7 +112,6 @@
     and readability, and don't hesitate to refactor your code to make it 
     simpler and more straightforward, while still maintaining the necessary 
     functionality.
-
 # 5. Error Handling:
   - Use exceptions to handle errors appropriately. Use `try`, `except`, 
     `finally` to manage exceptions. It is crucial to stay calm and try to 
@@ -125,7 +132,6 @@
   - Remember that exception handling should not be a way to ignore errors. 
     Instead, it should be a way to manage errors in a controlled and 
     informative way, ensuring that your code is robust and reliable.
-
 # 6. Documentation:
   - Document your code effectively. This helps other developers (and yourself 
     in the future) understand what the code does. Good documentation is 
@@ -148,5 +154,4 @@
     MkDocs, to create more formal and accessible documentation for your 
     project. This can include usage guides, examples, and references, making 
     your code more user-friendly and accessible to other developers.
-
 """
