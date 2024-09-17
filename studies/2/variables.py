@@ -56,6 +56,17 @@ print("text \\ eight")  # show a \
 # Know a string length
 test_name = "Daniel"
 print(len(test_name))  # print the number of characters on this string
+# dynamic print
+print(f"{text_five},{text_four},{text_three}")
+# some features of strings
+features_test = "featutes test"
+print(features_test.upper())
+print(features_test.lower())
+print(features_test.strip())
+print(features_test.lstrip())
+print(features_test.rstrip())
+print(features_test.find("st"))
+print("https://www.pexels.com/search/ocean/".replace("ocean", "sea"))
 
 # Lists (list): Ordered and mutable collections of items, which can be of
 # different types, such as [1, 2, 3] or ["a", "b", "c"].
