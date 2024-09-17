@@ -42,7 +42,20 @@ print(floating_point=3.14)  # Output: 3.14
 print(complex_number=2 + 3j)  # Output: (2+3j)
 
 # Strings (str): Sequences of characters, such as "Hello, world!".
-print(text="Hello, world!", text_two="hello world")  # Output: Hello, world!
+text = "recommended"
+text_two = "two"  # ''
+text_three = """three
+test"""
+text_four = "text for"
+text_five = "text five"
+print(text, text_two, text_three, text_four, text_five)
+# Escape characters
+print("text \n six")  # Wrap outline
+print("text ' seven'")  # ignore a characters
+print("text \\ eight")  # show a \
+# Know a string length
+test_name = "Daniel"
+print(len(test_name))  # print the number of characters on this string
 
 # Lists (list): Ordered and mutable collections of items, which can be of
 # different types, such as [1, 2, 3] or ["a", "b", "c"].
