@@ -67,6 +67,33 @@ print(features_test.lstrip())
 print(features_test.rstrip())
 print(features_test.find("st"))
 print("https://www.pexels.com/search/ocean/".replace("ocean", "sea"))
+# Slice; manipulating parts of a string, through indexes
+word = "my test word"
+print(word[6])
+print(word[0])  # return the first character
+print(word[-1])  # return the final character
+print(word.index("d"))  # search using a index character, and return the sames
+print(word[word.index("3")], [word[7]])  # dynamic mode with multiples results
+# it will never print the number defined as final, but rather the number before it.
+# In case of non ": final definition" the same will interact until the end
+print(word[0:-1])  # the : define the final of the operation
+print(word[3:])
+print(
+    word[:-5]
+)  # sets the index target to take out, before starting as soon as it finishes advancing
+# This way, we can know when was the last time that such character was defined in the string.
+print(word.rindex("o"))
+# Sprit e join
+# The separation of items in a list is done by spaces.
+# However, it is possible to separate by a special character and define from where to what point to separate.
+full_name = "Gabriel, De, Lucca"
+print(full_name.split())  # Using the stand parameter the spaces
+print(full_name.split(","))  # using a special character
+print(full_name.split(",", "2"))  # special character with limit of iteration
+# combining string and parts of string and separating with special characters
+my_prhase = "the dogs barks"
+print(",".join(my_prhase))
+print("".join(my_prhase))
 
 # Lists (list): Ordered and mutable collections of items, which can be of
 # different types, such as [1, 2, 3] or ["a", "b", "c"].
