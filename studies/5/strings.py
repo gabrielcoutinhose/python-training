@@ -51,3 +51,6 @@ print(full_name.split(",", "2"))  # special character with limit of iteration
 my_prhase = "the dogs barks"
 print(",".join(my_prhase))
 print("".join(my_prhase))
+# Unpacking process
+vehicle_one_power, vehicle_two_power = 1.0, 2.5
+print(vehicle_one_power, vehicle_two_power)

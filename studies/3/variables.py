@@ -21,11 +21,3 @@ print(current_vehicle_speed)
 # Constant
 START_VEHICLE_SPEED = 10
 print(START_VEHICLE_SPEED)
-
-# Unpacking process
-vehicle_one_power, vehicle_two_power = 1.0, 2.5
-print(vehicle_one_power, vehicle_two_power)
-
-# Interacting with user, through terminal
-reponse = input("y / n?")
-print(reponse)
