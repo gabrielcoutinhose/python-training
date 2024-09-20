@@ -1,10 +1,14 @@
-"""How much time and days left?"""
+"""How much time and days left"""
 
 from datetime import datetime
 
 date_now = datetime.now()
 
-inputed_date = datetime.strptime(input("desired date, HH/DD/MM/YYYY: "), "%m/%d/%Y")
+inputed_date = datetime.strptime(input("Desired date (MM/DD/YYYY): "), "%m/%d/%Y")
 
 time_remaining = inputed_date - date_now
-print({time_remaining})
+
+days_remaining = time_remaining.days
+hours_remaining = time_remaining.seconds // 3600
+
+print(f"Days remaining: {days_remaining}, Hours remaining: {hours_remaining}")
