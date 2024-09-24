@@ -27,11 +27,13 @@ number_id = input("Your number ID? ")
 print("Your ID was saved.")
 
 # Select a random team
+print("We are selecting your team")
 possible_teams = ["A", "B", "C", "D", "E"]
 team_name = random.choice(possible_teams)  # Use choice to select a single team
 print(f"Your team '{team_name}' has been selected.")
 
 # Save the registration date
+print("We are recording the registration date")
 registration_date = datetime.datetime.now()
 formatted_registration_date = registration_date.strftime("%m/%d/%Y")
 print("Registration date saved.")
